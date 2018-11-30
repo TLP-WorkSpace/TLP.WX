@@ -37,18 +37,16 @@ namespace WCP_demo.Controllers
         /// </summary>
         [HttpGet("TestException")]
         public void TestException()
-        {
-            throw new GLException("异常测试");
+        {            
+            var ran = new Random();
+            var x = ran.Next(1, 100);
 
-            //var ran = new Random();
-            //var x = ran.Next(1, 100);
-
-            //if (x % 2 != 0)
-            //{
-            //    throw new GLException(ErrorCode.E10001, nameof(ErrorCode.E10001).GetCode());
-            //}
-            //else
-            //    throw new Exception("异常错误测试");
+            if (x % 2 != 0)
+            {
+                throw new GLException(ErrorCode.E10001, nameof(ErrorCode.E10001).GetCode());
+            }
+            else
+                throw new Exception("异常错误测试");
         }
 
 
