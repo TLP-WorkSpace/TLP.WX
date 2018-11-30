@@ -10,7 +10,7 @@ namespace WCP_Repositories
     public class UserInfo
     {
         /// <summary>
-        /// 主键Id
+        /// Id
         /// </summary>
         public string Id { get; set; }
 
