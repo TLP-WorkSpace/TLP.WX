@@ -4,6 +4,9 @@ using System.Text;
 
 namespace WCP_Repositories
 {
+    /// <summary>
+    /// 用户
+    /// </summary>
     public class UserInfo
     {
         /// <summary>
