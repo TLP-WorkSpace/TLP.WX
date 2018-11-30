@@ -28,7 +28,7 @@ namespace WCP_demo.Controllers
         public async Task<List<UserInfo>> GetUserList()
         {
             _logger.Info("获取信息列表");
-            var list = await UserRepository.GetUserInfoList();            
+            var list = await UserRepository.GetUserInfoList();
             return list;
         }
 
@@ -37,7 +37,7 @@ namespace WCP_demo.Controllers
         /// </summary>
         [HttpGet("TestException")]
         public void TestException()
-        {            
+        {
             var ran = new Random();
             var x = ran.Next(1, 100);
 
