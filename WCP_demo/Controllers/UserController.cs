@@ -49,7 +49,7 @@ namespace WCP_demo.Controllers
                 throw new Exception("异常错误测试");
         }
 
-        
+        //测试自动构建
 
     }
 }
